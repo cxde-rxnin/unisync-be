@@ -7,7 +7,7 @@ import { mergeAndResolve, assignmentsToDocx } from "../solver/index";
 import fs from "fs";
 
 const router = Router();
-const upload = multer({ dest: path.join(process.cwd(), "uploads/") });
+const upload = multer({ dest: "/tmp/" });
 
 // POST /api/upload
 // Accepts multiple files (pdf/docx/xlsx/csv)
